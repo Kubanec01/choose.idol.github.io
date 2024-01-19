@@ -1,0 +1,102 @@
+body{
+    box-sizing: border-box;
+    background: linear-gradient(
+    150deg,
+    var(--color-for-body-one) 30%, 
+    var(--color-for-body-two ) ,
+    var(--color-for-body-one ) ,
+    var(--color-for-body-two ) ,
+    var(--color-for-body-one ) 80%
+    );
+    height: 540px;
+}
+
+/* colors */
+    :root{
+        --color-for-body-one:rgb(255, 131, 152);
+        --color-for-body-two:rgb(68, 183, 237);
+        --color-font-title:rgb(159, 22, 138);
+        --color-image-hover:rgba(254, 0, 233, 0.76);
+        --color-image-border:rgba(231, 93, 231, 0.852);
+    }
+
+/* wed-site */
+
+.content-container{
+    margin: 25px auto;
+}
+
+/* web title */
+
+h1{
+    text-align: center;
+    text-indent: -300px;
+    margin: 20px auto 15px auto;
+    font-family: Fantasy,OCR A Std, monospace	;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    font-size: 26px;
+    color: var(--color-font-title);
+    text-shadow: 1.5px 1.5px 1px white;
+}
+
+.font-size{
+    font-size: 40px;
+}
+
+/* images */
+
+.choices{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    justify-content: center;
+}
+
+img{
+    border: 6px solid var(--color-image-border);
+    border-radius: 4px;
+    object-fit: cover;
+    width: 300px;
+    height: 350px;
+    cursor: pointer;
+}
+
+img:hover,
+img:focus{
+    transition: .2s ease-in-out ;
+    border-color: var(--color-image-hover) ;
+}
+
+.desaturate {
+    filter: grayscale(100%);
+    transform: scale(0.85);
+    transition: .2s ease-in-out;
+}
+
+/* vote numbers */
+
+.left-container-haselhov, 
+.right-container-habera {
+    position: relative;
+    display: inline-block; /* zajistí, aby se číslo nepřetékalo do dalšího řádku */
+}
+
+.score-one, 
+.score-two {
+    position: absolute;
+    top: 300px; /* nastavte vertikální polohu */
+    left: 50%; /* nastavte horizontální polohu */
+    transform: translateX(-50%);
+    color: rgb(253, 36, 235); /* barva textu */
+    font-size: 100px;
+    font-family: Gill Sans MT, Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold; 
+    -webkit-text-stroke: 3px rgb(243, 243, 243);
+}
+
+
+
+
+
+
